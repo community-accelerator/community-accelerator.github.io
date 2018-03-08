@@ -12,6 +12,24 @@
   float: none;
 }
 
+#emailHelp {
+  padding: 20px;
+}
+
+.person {
+  height: 1275px;
+  position: relative;
+}
+
+#fh5co-team .person .social {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 20px;
+  display: block;
+}
+
 @media screen and (max-width: 320px) {
   #fh5co-home .fh5co-copy-inner h1 {
     font-size: 45px;
@@ -22,5 +40,33 @@
 @media screen and (max-width: 768px) {
   #contactForm button {
     width: 100%;
+  }
+
+  #fh5co-home h2 {
+    background-color: rgba(127, 127, 127, 0.6);
+    color: white;
+  }
+
+  #fh5co-home .fh5co-copy-inner h2 {
+    color: white;
+  }
+
+  #emailHelp {
+    font-size: 66%
+  }
+
+  #fh5co-contact .form-control {
+    border: 1px solid #E8ECF1;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .person {
+    height: 730px;
+    overflow: hidden;
+  }
+
+  .person p:not(:nth-of-type(2)) {
+    display: none;
   }
 }
